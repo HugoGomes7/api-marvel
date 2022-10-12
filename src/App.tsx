@@ -1,8 +1,8 @@
 import React from 'react';
-import Comics from './pages/Comics';
+import Characters from './pages/Characters';
 
 const App: React.FunctionComponent = () => {
-  return <Comics />;
+  return <Characters />;
 };
 
 export default App;

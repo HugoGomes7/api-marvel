@@ -27,7 +27,6 @@ export const Card = styled.div`
 
   h2, p {
     padding: 5px;
-    text-align: justify;
   }
 
   div#img {

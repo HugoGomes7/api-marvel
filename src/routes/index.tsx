@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Characters from '../pages/Characters';
 import Comics from '../pages/Comics';
@@ -9,14 +9,14 @@ import Series from '../pages/Series';
 import Stories from '../pages/Stories';
 
 const Routes: React.FC = () => (
-  <Switch>
-    <Route path="/" exact component={Characters} />
-    <Route path="/characters" component={Characters} />
-    <Route path="/comics" component={Comics} />
-    <Route path="/creators" component={Creators} />
-    <Route path="/events" component={EventsPg} />
-    <Route path="/series" component={Series} />
-    <Route path="/stories" component={Stories} />
-  </Switch>
+  <Routes>
+    <Route path="/" element={<Characters />} />
+    <Route path="/characters" element={<Characters />} />
+    <Route path="/comics" element={<Comics />} />
+    <Route path="/creators" element={<Creators />} />
+    <Route path="/events" element={<EventsPg />} />
+    <Route path="/series" element={<Series />} />
+    <Route path="/stories" element={<Stories />} />
+  </Routes>
 );
 export default Routes;

@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
+    "skipLibCheck": true,
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
+    // "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -24,7 +24,4 @@
     "src/components",
     "src/custom.d.ts"
   ],
-  "files": [
-    "src/assets/bgMarvel.jpg"
-  ]
 }

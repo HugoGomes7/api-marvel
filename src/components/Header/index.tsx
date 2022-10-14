@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import {
   FiHeart,
   FiUser,
@@ -8,7 +10,6 @@ import {
   FiBookmark,
   FiFilm,
   FiBook,
-  FiGithub,
 } from 'react-icons/fi';
 
 import MarvelLogo from '../../assets/logoAPI.png';
@@ -17,39 +18,39 @@ import { Container, DevDiv } from './styles';
 const Header: React.FC = () => (
 
   <Container>
-
     <img className="logo" src={MarvelLogo} alt="logo" />
 
     <div>
-      <a href="#">
+      <Link to="/characters">
         <FiUser />
         Characters
-      </a>
+      </Link>
 
-      <a href="#">
+      <Link to="/comics">
         <FiBookOpen />
         Comics
-      </a>
+      </Link>
 
-      <a href="#">
+      <Link to="/creators">
         <FiUsers />
         Creators
-      </a>
+      </Link>
 
-      <a href="#">
+      <Link to="/events">
         <FiBookmark />
         Events
-      </a>
+      </Link>
 
-      <a href="#">
+      <Link to="/series">
         <FiFilm />
         Series
-      </a>
+      </Link>
 
-      <a href="#">
+      <Link to="/stories">
         <FiBook />
         Stories
-      </a>
+      </Link>
+
     </div>
 
     <DevDiv>
@@ -57,6 +58,7 @@ const Header: React.FC = () => (
         <br />
         <strong>Hugo D'Lucca</strong>
       </p>
+      {/* insert github */}
     </DevDiv>
 
   </Container >

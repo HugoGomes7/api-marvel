@@ -33,17 +33,17 @@ export const Container = styled.header`
 `;
 
 export const DevDiv = styled.div`
+  font-weight: 700;
   display: flex;
   align-items: center;
   text-align: center;
   margin-right: 10px;
+  letter-spacing: .1rem;
+  color: #505050;
  
   a {
     background: transparent;
     width: 80px;
   }
 
-
-
-
-`
+`;

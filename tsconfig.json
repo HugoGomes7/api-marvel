@@ -21,7 +21,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src/components",
+    "src/custom.d.ts"
   ],
   "files": [
     "src/assets/bgMarvel.jpg"

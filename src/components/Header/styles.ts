@@ -4,11 +4,23 @@ export const Container = styled.header`
   background: #ec1d24;
   width: 100%;
   height: 80px;
-  border-radius: 8px 8px 0 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  div > a {
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-decoration: none;
     color: #000;
     background: #fefefe;
@@ -19,3 +31,19 @@ export const Container = styled.header`
     font-weight: 700;
   }
 `;
+
+export const DevDiv = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+ 
+  a {
+    background: transparent;
+    width: 80px;
+  }
+
+
+
+
+`

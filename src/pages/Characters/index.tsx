@@ -1,5 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
+import { FiChevronDown } from 'react-icons/fi'
+
 import api from '../../services/api';
+
+
+import { Card, CardList, Container, ButtonMore } from './styles';
 
 interface ResponseData {
   id: string;
@@ -20,12 +25,46 @@ const Characters: React.FC = () => {
       .get('/characters')
       .then(response => {
         setCharacters(response.data.data.results);
-        //console.log('log verification', response.data.data.results);
       })
-      .catch(err => console.log(err));
+      .catch(err => console.log('log error', err));
   }, []);
 
-  return <h1>Characters</h1>;
+  const handleMore = useCallback(async () => {
+    try {
+      const offset = characters.length;
+      const response = await api.get('characters', {
+        params: {
+          offset,
+        },
+      });
+
+      setCharacters([...characters, ...response.data.data.results]);
+
+    } catch (err) {
+      console.log(err)
+    }
+  }, [characters]);
+
+  return (
+    <Container>
+      <CardList>
+        {characters.map(character => {
+          return (
+            <Card key={character.id} thumbnail={character.thumbnail}>
+              <div id="img" />
+              <h2>{character.name}</h2>
+              <p>{character.description}</p>
+            </Card>
+          );
+        })}
+      </CardList>
+      <ButtonMore onClick={handleMore}>
+        <FiChevronDown size={30} />
+        View More
+        <FiChevronDown size={30} />
+      </ButtonMore>
+    </Container>
+  );
 };
 
 export default Characters;

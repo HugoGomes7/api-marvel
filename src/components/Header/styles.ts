@@ -8,13 +8,15 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  img {
+      height: 60px;
+      margin-right: 5px;
+      margin-left: 15px;
+    }
+
   div {
     display: flex;
     flex-direction: row;
-  }
-
-  .logo {
-    margin-left: 10px;
   }
 
   a {
@@ -39,11 +41,16 @@ export const DevDiv = styled.div`
   text-align: center;
   margin-right: 10px;
   letter-spacing: .1rem;
-  color: #505050;
+  color: #f1f1f1; 
  
   a {
     background: transparent;
     width: 80px;
+  }
+
+  img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
   }
 
 `;

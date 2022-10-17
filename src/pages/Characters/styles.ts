@@ -28,6 +28,7 @@ export const InputLabel = styled.div<InputLabelProps>`
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
     padding: 0 10px;
     border-radius: 10px;
+    background: #f1f1f1; 
 
     ${(props) => props.isFocused
     && css`
@@ -40,16 +41,6 @@ export const InputLabel = styled.div<InputLabelProps>`
       background: transparent;
       margin: 10px;
     }
-  }
-
-  svg#enter {
-    margin: 5px;
-    width: 26px;
-    height: 26px;
-    padding: 3px;
-    border-radius: 5px;
-    background: #f1f1f1;
-    cursor: pointer;
   }
 `;
 

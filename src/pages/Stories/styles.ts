@@ -20,5 +20,4 @@ export const Card = styled.div`
   width: 100%;
   max-height: auto;
   }
-
 `;

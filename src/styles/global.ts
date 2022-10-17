@@ -12,5 +12,8 @@ export default createGlobalStyle`
       font-size: 20px;
     }
 
-  `;
+    body {
+      background-image: url(https://wallpapercave.com/wp/wp2903386.gif);
+    }
+`;
 

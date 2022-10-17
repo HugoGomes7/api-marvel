@@ -114,7 +114,7 @@ const Characters: React.FC = () => {
             id="input"
             type="search"
             list="marvelsearch"
-            placeholder="Nome do personagem"
+            placeholder="character name"
             value={seach}
             onChange={(event) => setSeach(event.target.value)}
             onKeyDown={(e) => (e.key === 'Enter' ? handleSeach() : '')}

@@ -11,8 +11,7 @@ import {
   FiBook,
 } from 'react-icons/fi';
 
-
-import MarvelLogo from '../../assets/logoAPI.png';
+import MarvelLogo from '../../assets/Marvel_Logo.png';
 
 import { Container, DevDiv } from './styles';
 
@@ -59,7 +58,9 @@ const Header: React.FC = () => (
         <br />
         <strong>Hugo D'Lucca</strong>
       </p>
-      {/* insert github */}
+      <a href="https://github.com/HugoGomes7">
+        <img src="https://avatars.githubusercontent.com/u/65207104?v=4" alt="Hugo D'Lucca" />
+      </a>
     </DevDiv>
 
   </Container >

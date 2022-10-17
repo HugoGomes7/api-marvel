@@ -1,15 +1,11 @@
 import React from 'react';
+
 import { BrowserRouter } from 'react-router-dom';
-
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import GlobalStyle from './styles/global';
 
-// import Routes from './routes';
-
 import Header from './components/Header';
-
 import Characters from './pages/Characters';
 import Comics from './pages/Comics';
 import Creators from './pages/Creators';

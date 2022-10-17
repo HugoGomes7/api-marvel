@@ -42,8 +42,6 @@ export const Card = styled.div`
     height: 100px;
     }
   }
-
-
 `;
 
 export const ButtonMore = styled.div`

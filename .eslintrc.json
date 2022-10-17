@@ -4,15 +4,14 @@
     "es6": true
   },
   "extends": [
-    // "plugin:react/recommended",
+    "plugin:react/recommended",
     "standard-with-typescript",
-    // "plugin:@typescript-eslint/recommended",
-    // "prettier/@typescript-eslint",
-    // "plugin:prettier/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
   "overrides": [],
   "parserOptions": {
-    "project": "./tsconfig.eslint.json",
     "ecmaVersion": "latest",
     "sourceType": "module"
   },

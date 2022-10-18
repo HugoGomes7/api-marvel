@@ -1,4 +1,5 @@
 # Marvel API
+![GitHub](https://img.shields.io/github/license/hugogomes7/api-marvel)
 
 # About the project
 

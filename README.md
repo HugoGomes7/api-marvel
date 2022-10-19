@@ -13,10 +13,9 @@ https://user-images.githubusercontent.com/65207104/196325225-294522ea-9c8d-4f58-
 
 
 # Technologies used
-## Backend
-- API
 - React
 - TypeScript
+- API
 
 # How to run project
 

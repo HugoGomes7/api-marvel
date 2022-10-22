@@ -5,7 +5,7 @@
 
 In this project, I consumed data from the Marvel API and formatted it in a Single Page Application. 
 
-## Layout web
+## Layout web & smartphone displays
  
 https://user-images.githubusercontent.com/65207104/196325225-294522ea-9c8d-4f58-9cbe-57f6df6c7797.mp4
 
@@ -13,10 +13,9 @@ https://user-images.githubusercontent.com/65207104/196325225-294522ea-9c8d-4f58-
 
 
 # Technologies used
-## Backend
-- API
 - React
 - TypeScript
+- API
 
 # How to run project
 

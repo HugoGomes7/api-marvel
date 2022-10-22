@@ -138,7 +138,7 @@ const Characters: React.FC = () => {
       </Container>
       <ButtonMore onClick={handleMore}>
         <FiChevronsDown size={30} />
-        Mais
+        View More
         <FiChevronsDown size={30} />
       </ButtonMore>
     </>

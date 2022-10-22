@@ -5,24 +5,30 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "standard-with-typescript",
+    "airbnb",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
-  "overrides": [],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "plugins": [
     "react",
     "react-hooks",
+    "@typescript-eslint",
     "prettier"
   ],
   "rules": {
-    "react/jsx-one-expression-per-line": "off",
-    "no-use-before-define": "off",
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",

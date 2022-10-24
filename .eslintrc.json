@@ -6,10 +6,8 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    // "plugin:@typescript-eslint/recommended",
-    // "prettier/@typescript-eslint",
+    "some-other-config-you-use",
     "plugin:prettier/recommended",
-    // "some-other-config-you-use",
     "prettier"
   ],
   "globals": {

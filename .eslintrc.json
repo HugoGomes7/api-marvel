@@ -9,7 +9,7 @@
     // "plugin:@typescript-eslint/recommended",
     // "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
-    "some-other-config-you-use",
+    // "some-other-config-you-use",
     "prettier"
   ],
   "globals": {
